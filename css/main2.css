@@ -13,7 +13,7 @@ body *::after {
 /* 레이아웃 */
 body {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
-    font-weight: 400;
+    font-weight: 400; /*기본값이 400이지만 명시적으로 표시*/
 }
 
 /* 본문 기본설정 */
