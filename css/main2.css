@@ -1,0 +1,96 @@
+/* 기본 박스 사이징 */
+body *, body *::before, body *::after {
+    box-sizing: border-box; 
+}
+
+/* 레이아웃 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header, .visual, .main, .slogun, .footer {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header{
+    height: 20vh;
+    background: red;
+}
+.member {
+    list-style-type: none;
+    display: flex;
+}
+.navigation {
+    display: flex;
+}
+.navigation .a11y-hidden{
+    visibility: hidden;
+}
+.navigation .menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.submenu > li{
+    visibility: hidden;
+}
+.menu-link:hover + .submenu> li{
+    visibility: visible;
+}
+.visual {
+    height: 10vh;
+    background : blue;
+}
+/* 메인 콘텐츠 */
+.main {
+    display: flex;    
+    flex-flow: row nowrap;
+    align-items: stretch;
+    /* justify-content: space-evenly;  */
+    justify-content: space-between;
+    padding: 30px;
+    height: 60vh;
+    background : yellow;
+}
+
+
+
+.group1 {
+    width: 250px;
+    background :pink;
+}
+
+.group2 {
+    width: 380px;
+    background :orange;
+}
+
+.group3 {
+    width: 190px;
+    background :blueviolet;
+}
+
+.slogun {
+    height: 10vh;
+    background : tomato;
+}
+
+.footer-bg {
+    width: 100%;
+    background: violet;
+
+}
+.footer {
+    height: 10vh;
+    background : lime;
+}
